@@ -115,7 +115,8 @@ export default function Alianzas(){
         </h2>
         <p style={{ color: 'var(--ink-muted)', fontSize: '15px', marginBottom: '30px', maxWidth: '56ch' }}>
           Si decides inscribirte en Galileo Médico, esto es lo que obtienes además de su programa:
-          acceso completo a todo lo que he construido para el Step 1 — y próximamente el Step 2.
+          acceso completo a los recursos que construí durante mi propia preparación — los mismos
+          que me ayudaron a aprobar mis exámenes USMLE.
         </p>
 
         {[
