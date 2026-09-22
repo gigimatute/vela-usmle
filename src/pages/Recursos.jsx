@@ -11,8 +11,8 @@ const recursos = [
   },
   {
     title: 'Guías interactivas por sistema',
-    text: '[Agrega aquí el link una vez publiques tu biblioteca de guías HTML por sistema.]',
-    href: '#',
+    text: 'Disponibles previa solicitud por privado.',
+    href: null,
   },
 ]
 
@@ -26,18 +26,21 @@ export default function Recursos(){
         Las herramientas que he construido a lo largo de mi propia preparación.
       </p>
 
-      {recursos.map((r) => (
-        <a key={r.title} href={r.href} target="_blank" rel="noopener" style={{
-          display: 'block',
-          textDecoration: 'none',
-          color: 'inherit',
-          padding: '20px 0',
-          borderBottom: '1px solid var(--cream-warm)',
-        }}>
-          <h3 style={{ fontSize: '16.5px', marginBottom: '5px', color: 'var(--maroon)' }}>{r.title}</h3>
-          <p style={{ margin: 0, fontSize: '14.5px', color: 'var(--ink-muted)', maxWidth: '54ch' }}>{r.text}</p>
-        </a>
-      ))}
+      {recursos.map((r) => {
+        const Tag = r.href ? 'a' : 'div'
+        return (
+          <Tag key={r.title} href={r.href || undefined} target={r.href ? '_blank' : undefined} rel={r.href ? 'noopener' : undefined} style={{
+            display: 'block',
+            textDecoration: 'none',
+            color: 'inherit',
+            padding: '20px 0',
+            borderBottom: '1px solid var(--cream-warm)',
+          }}>
+            <h3 style={{ fontSize: '16.5px', marginBottom: '5px', color: 'var(--maroon)' }}>{r.title}</h3>
+            <p style={{ margin: 0, fontSize: '14.5px', color: 'var(--ink-muted)', maxWidth: '54ch', fontStyle: r.href ? 'normal' : 'italic' }}>{r.text}</p>
+          </Tag>
+        )
+      })}
     </div>
   )
 }
