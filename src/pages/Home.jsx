@@ -9,8 +9,8 @@ export default function Home(){
         padding: '72px 32px 60px',
       }}>
         <div className="wrap" style={{ padding: 0 }}>
-          <div style={{ fontSize: '14px', color: 'var(--gold-soft)', marginBottom: '18px' }}>
-            Vela Salud · camino a la revalidación en EE. UU.
+          <div style={{ fontSize: '13px', color: 'var(--gold-soft)', marginBottom: '18px', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 600 }}>
+            Vela Salud · Camino a la revalidación en EE. UU.
           </div>
           <h1 style={{ fontSize: 'clamp(30px, 4.5vw, 44px)', lineHeight: 1.2, maxWidth: '16ch' }}>
             Tu ruta hacia ejercer medicina en Estados Unidos, paso a paso

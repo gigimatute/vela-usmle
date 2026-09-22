@@ -1,3 +1,5 @@
+import javierPhoto from '../assets/javier-galileo.png'
+
 export default function Alianzas(){
   return (
     <div>
@@ -7,8 +9,8 @@ export default function Alianzas(){
         padding: '56px 32px 48px',
       }}>
         <div className="wrap" style={{ padding: 0 }}>
-          <div style={{ fontSize: '14px', color: 'var(--gold-soft)', marginBottom: '16px' }}>
-            Recursos recomendados
+          <div style={{ fontSize: '13px', color: 'var(--gold-soft)', marginBottom: '16px', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 600 }}>
+            Alianza estratégica · Recursos recomendados
           </div>
           <h1 style={{ fontSize: 'clamp(26px, 4vw, 36px)', lineHeight: 1.2, maxWidth: '18ch' }}>
             Un aliado en el camino del USMLE
@@ -36,18 +38,43 @@ export default function Alianzas(){
         <div style={{
           fontFamily: "'Fraunces', Georgia, serif",
           fontStyle: 'italic',
-          fontSize: '18px',
+          fontSize: '17px',
           color: 'var(--maroon)',
           marginTop: '22px',
         }}>— Dra. Guilliana "Gigi" Matute</div>
+        <div style={{ fontSize: '13px', color: 'var(--ink-muted)', marginTop: '2px' }}>
+          Fundadora, Vela Salud
+        </div>
       </div>
 
       <div style={{ height: '1px', background: 'linear-gradient(90deg, var(--gold) 0%, transparent 85%)', margin: '0 32px' }} />
 
       <div className="wrap" style={{ padding: '44px 32px' }}>
-        <h2 style={{ fontSize: '24px', color: 'var(--maroon)', marginBottom: '6px' }}>Javier Galileo</h2>
-        <div style={{ fontSize: '14.5px', color: 'var(--ink-muted)', marginBottom: '20px' }}>
-          Fundador, Galileo Médico LLC
+        <div style={{ fontSize: '12.5px', color: 'var(--gold)', marginBottom: '18px', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600 }}>
+          Sobre el educador
+        </div>
+        <div style={{ display: 'flex', gap: '28px', alignItems: 'flex-start', marginBottom: '24px', flexWrap: 'wrap' }}>
+          <img
+            src={javierPhoto}
+            alt="Javier Galileo"
+            style={{
+              width: '128px',
+              height: '160px',
+              borderRadius: '6px',
+              objectFit: 'cover',
+              boxShadow: '0 6px 18px rgba(15, 52, 80, 0.18)',
+              flexShrink: 0,
+            }}
+          />
+          <div style={{ minWidth: '220px' }}>
+            <h2 style={{ fontSize: '25px', color: 'var(--maroon)', marginBottom: '5px' }}>Javier Galileo</h2>
+            <div style={{ fontSize: '14.5px', color: 'var(--ink-muted)', marginBottom: '2px' }}>
+              Fundador, Galileo Médico LLC
+            </div>
+            <div style={{ fontSize: '13.5px', color: 'var(--ink-muted)' }}>
+              Educación médica y preparación USMLE
+            </div>
+          </div>
         </div>
         <p style={{ maxWidth: '62ch', fontSize: '15.5px' }}>
           Galileo Médico LLC ofrece educación médica y preparación académica para médicos,
@@ -80,8 +107,11 @@ export default function Alianzas(){
       <div style={{ height: '1px', background: 'linear-gradient(90deg, var(--gold) 0%, transparent 85%)', margin: '0 32px' }} />
 
       <div className="wrap" style={{ padding: '44px 32px' }}>
+        <div style={{ fontSize: '12.5px', color: 'var(--gold)', marginBottom: '10px', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600 }}>
+          Cómo funciona
+        </div>
         <h2 style={{ fontSize: '22px', color: 'var(--maroon)', marginBottom: '8px' }}>
-          Cómo funciona esta alianza
+          El proceso, en cuatro pasos
         </h2>
         <p style={{ color: 'var(--ink-muted)', fontSize: '15px', marginBottom: '30px', maxWidth: '56ch' }}>
           Si decides inscribirte en Galileo Médico, esto es lo que obtienes además de su programa:
@@ -112,10 +142,10 @@ export default function Alianzas(){
         borderRadius: '0 4px 4px 0',
       }}>
         <p style={{ margin: 0, fontSize: '14px', color: 'var(--ink-muted)' }}>
-          <strong style={{ color: 'var(--ink)' }}>Transparencia:</strong> esta es una colaboración
-          de visibilidad mutua entre Javier Galileo y yo — no recibo comisión monetaria por esta
-          recomendación. Lo que comparto aquí nace de mi propia experiencia usando su contenido
-          durante mi preparación.
+          <strong style={{ color: 'var(--ink)' }}>Nota de transparencia:</strong> esta es una
+          colaboración de visibilidad mutua entre Galileo Médico LLC y Vela Salud. No existe
+          comisión monetaria de por medio — la recomendación nace de mi propia experiencia
+          utilizando estos recursos durante mi preparación.
         </p>
       </div>
     </div>
