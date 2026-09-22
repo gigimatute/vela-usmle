@@ -41,7 +41,7 @@ export default function Alianzas(){
           fontSize: '17px',
           color: 'var(--maroon)',
           marginTop: '22px',
-        }}>— Dra. Guilliana "Gigi" Matute</div>
+        }}>— Dr. Giulliana Matute</div>
         <div style={{ fontSize: '13px', color: 'var(--ink-muted)', marginTop: '2px' }}>
           Fundadora, Vela Salud
         </div>

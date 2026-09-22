@@ -47,6 +47,9 @@ export default function Layout(){
       <footer style={{ padding: '36px 32px 56px' }}>
         <div className="wrap" style={{ padding: 0, fontSize: '13px', color: 'var(--ink-muted)' }}>
           Vela USMLE · parte de Vela Salud
+          <div style={{ marginTop: '6px', fontSize: '12px' }}>
+            © {new Date().getFullYear()} Dr. Giulliana Matute. Todos los derechos reservados.
+          </div>
         </div>
       </footer>
     </div>
